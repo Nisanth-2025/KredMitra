@@ -1,0 +1,14 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT 'app:app'
+
+# This is a basic configuration. In a production environment, you would
+# configure instance class, scaling, environment variables, etc.
+# See: https://cloud.google.com/appengine/docs/standard/python3/config/appref
+handlers:
+- url: /.*
+  script: auto
+
+# You would set environment variables for agent URLs here in production
+# env_variables:
+#  AGENT_EXTRACTOR_URL: 'https://agent-extractor-xyz-uc.a.run.app/extract'
+#  AGENT_SCORING_URL: 'https://agent-scoring-xyz-uc.a.run.app/score'

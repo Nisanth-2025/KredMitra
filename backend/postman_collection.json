@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+		"name": "KredMitra SIH Platform API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Process New Application",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ramesh Kumar\",\n    \"phone\": \"9876543210\",\n    \"aadhaar\": \"123412341234\",\n    \"profession\": \"Small Farmer\",\n    \"location\": \"Nalegaon, Maharashtra\",\n    \"pincode\": \"413521\",\n    \"incomeType\": \"Seasonal/Irregular\",\n    \"financialStatement\": \"I am a small farmer with 5 acres of land. I grow sugarcane and my income is seasonal, mostly after the harvest in October. I need a small loan for seeds and fertilizer for the next cycle.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/application",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"application"
+					]
+				},
+				"description": "Submits user data to the orchestrator to begin the multi-agent analysis process."
+			},
+			"response": []
+		}
+	]
+}

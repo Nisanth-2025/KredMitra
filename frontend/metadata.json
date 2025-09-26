@@ -1,0 +1,8 @@
+{
+  "name": "KredMitra",
+  "description": "A sophisticated AI-driven application designed to enhance financial inclusivity by providing credit scoring, fraud detection, and financial guidance for underserved populations. It uses a multi-agent system to perceive, reason, act, and learn, offering a seamless and transparent experience for users.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
